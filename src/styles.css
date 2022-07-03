@@ -1,3 +1,7 @@
 #three-canvas-container {
     height: 100vh !important;
 }
+
+body {
+    margin: 0px
+}
