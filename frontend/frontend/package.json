@@ -1,22 +1,14 @@
 {
-  "name": "alex-budko",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-three/drei": "^9.14.3",
-    "@react-three/fiber": "^8.0.27",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
-    "drei": "^2.2.21",
-    "gltf-pipeline": "^3.0.5",
-    "gltfjsx": "^4.6.4",
-    "gsap": "^3.10.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "three": "^0.142.0",
-    "use-cannon": "^0.5.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
