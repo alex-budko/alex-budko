@@ -6,8 +6,8 @@ import React, { useEffect } from 'react'
 
 function Ground() {
     const [roughness, normal] = useLoader(TextureLoader, [
-        'terrain-roughness.jpg',
-        'terrain-normal.jpg',
+        'textures/terrain-roughness.jpg',
+        'textures/terrain-normal.jpg',
     ])
 
     useEffect(()=> {
@@ -20,19 +20,19 @@ function Ground() {
     }, [normal, roughness])
 
     return (
-        <Plane castShadow receiveShadow args={[30, 30]} rotation-x={[-Math.PI * 0.5]}>
+        <Plane castShadow receiveShadow args={[150, 150]} rotation-x={[-Math.PI * 0.5]}>
             <MeshReflectorMaterial 
                 normalMap={normal}
                 roughnessMap={roughness}
                 envMapIntensity={0}
                 dilthering={true}
-                color={[0.015, 0.015, 0.015]}
+                color={[0.0166, 0.0166, 0.0166]}
                 roughness={0.7}
                 blur={[1000, 400]}
                 mixBlur={30}
                 mixStrength={80}
                 mixContrast={1}
-                resolution={1024}
+                resolution={512}
                 mirror={0}
                 depthScale={0.01}
                 minDepthThreshold={0.9}

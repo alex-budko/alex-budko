@@ -1,57 +1,35 @@
 import {Canvas} from "@react-three/fiber"
-import {PerspectiveCamera, OrbitControls} from "@react-three/drei"
+import {PerspectiveCamera, OrbitControls,} from "@react-three/drei"
 import { angleToRads } from "../utils/angle"
 import "../styles.css"
+
+import { Physics, useBox } from '@react-three/cannon'
 import { Suspense, useEffect, useRef } from "react"
 import Ground from "./Ground"
-
+import Lights from "./Lights"
+import MyObject from "./MyObject"
+import TextMesh from './TextMesh'
 function HomeDrawing() {
 
     const orbitControlsRef = useRef(null)
-
-    useEffect(()=> {
-        if (orbitControlsRef.current) {
-            console.log(orbitControlsRef.current)
-        }
-            
-    }, [])
     
     return (
         <div id="home-drawing">
             <Canvas shadows >
                 <Suspense fallback={null}>
-                    {/* Ambient Light  */}
-                    {/* <ambientLight args={["white", .25]} /> */}
-
-                    <color args={[0, 0, 0]} attach={"background"} />
-
-                    <spotLight
-                        castShadow
-                        color={[1, 0.25, 0.7]} 
-                        angle={0.6} 
-                        intensity={1.5} 
-                        penumbra={0.5} 
-                        position={[5, 5, 0]}
-                        shadowBias={-0.0001}
-                    />
-
-                    <spotLight
-                        castShadow
-                        color={[.14, 0.5, 1]} 
-                        angle={0.6} 
-                        intensity={1.5} 
-                        penumbra={0.5} 
-                        position={[-5, 5, 0]}
-                        shadowBias={-0.0001}
-                    />
-
-                    <Ground />
-
-                    <PerspectiveCamera makeDefault position={[0, 7, 25]}/>
-
+                    <ambientLight />
+                    <color args={[.5, .5, .5]} attach={"background"} />
+                    <PerspectiveCamera fov={50} makeDefault position={[3, 2, 5]}/>
                     <OrbitControls ref={orbitControlsRef}  maxPolarAngle={angleToRads(80)} />
+                    <Lights />
+                    <TextMesh />
+                    
+                    <Physics>
+                        <MyObject />
+                        <Ground />
+                    </Physics>
 
-
+                    
                 </Suspense>
             </Canvas>
         </div>
