@@ -1,10 +1,12 @@
 import {Plane, MeshReflectorMaterial} from "@react-three/drei"
 import { LinearEncoding, RepeatWrapping, TextureLoader } from "three"
 import { useLoader } from "@react-three/fiber"
+import { usePlane } from '@react-three/cannon'
 
 import React, { useEffect } from 'react'
 
 function Ground() {
+    const [ref] = usePlane(() => ({ rotation: [-Math.PI / 2, 0, 0]}))
     const [roughness, normal] = useLoader(TextureLoader, [
         'textures/terrain-roughness.jpg',
         'textures/terrain-normal.jpg',
@@ -20,7 +22,7 @@ function Ground() {
     }, [normal, roughness])
 
     return (
-        <Plane castShadow receiveShadow args={[150, 150]} rotation-x={[-Math.PI * 0.5]}>
+        <Plane ref={ref} castShadow receiveShadow args={[150, 150]} rotation-x={[-Math.PI * 0.5]}>
             <MeshReflectorMaterial 
                 normalMap={normal}
                 roughnessMap={roughness}

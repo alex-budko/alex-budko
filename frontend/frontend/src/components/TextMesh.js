@@ -1,22 +1,16 @@
-import React from 'react';
-import * as THREE from 'three';
-import GT from '../fonts/GT.json';
+import { Text3D } from '@react-three/drei';
+import Roboto from '../fonts/Roboto.json';
 
-export default function App() {
-  // parse JSON file with Three
-  const font = new THREE.FontLoader().parse(GT);
 
-  // configure font geometry
-  const textOptions = {
-    font,
-    size: 5,
-    height: 1
-  };
-
+export default function TextMesh() {
   return (
-      <mesh>
-        <textGeometry attach='geometry' args={['three.js', textOptions]} />
-        <meshStandardMaterial attach='material' />
-      </mesh>
+    <Text3D
+        position={[-2, 1.3, 0]}
+        size={.5}
+        font={Roboto}
+    >
+        ALEX BUDKO
+        <meshNormalMaterial />
+    </Text3D>
   );
 }

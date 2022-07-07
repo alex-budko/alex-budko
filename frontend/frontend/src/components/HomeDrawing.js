@@ -3,8 +3,8 @@ import {PerspectiveCamera, OrbitControls,} from "@react-three/drei"
 import { angleToRads } from "../utils/angle"
 import "../styles.css"
 
-import { Physics, useBox } from '@react-three/cannon'
-import { Suspense, useEffect, useRef } from "react"
+import { Physics } from '@react-three/cannon'
+import { Suspense, useRef } from "react"
 import Ground from "./Ground"
 import Lights from "./Lights"
 import MyObject from "./MyObject"
@@ -22,9 +22,9 @@ function HomeDrawing() {
                     <PerspectiveCamera fov={50} makeDefault position={[3, 2, 5]}/>
                     <OrbitControls ref={orbitControlsRef}  maxPolarAngle={angleToRads(80)} />
                     <Lights />
-                    <TextMesh />
                     
                     <Physics>
+                        <TextMesh />
                         <MyObject />
                         <Ground />
                     </Physics>
