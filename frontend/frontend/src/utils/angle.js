@@ -1,1 +1,0 @@
-export const angleToRads = (angleInDegrees) => (Math.PI / 180) * angleInDegrees

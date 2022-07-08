@@ -4,9 +4,9 @@ import {
   Route,
 } from "react-router-dom";
 
-import HomeDrawing from "./components/HomeDrawing";
-import Email from "./components/Email";
-import Projects from "./components/Projects";
+import HomeDrawing from "./pages/HomeDrawing";
+import Email from "./pages/Email";
+import Projects from "./pages/Projects";
 import Navbar from "./components/Navbar";
 
 function App() {

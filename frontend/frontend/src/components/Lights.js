@@ -5,8 +5,8 @@ export default function Lights() {
             <spotLight
                 castShadow
                 color={[0.988, 0.956, 0.290]} 
-                angle={0.7} 
-                intensity={2} 
+                angle={1} 
+                intensity={1} 
                 penumbra={0.5} 
                 position={[5, 5, 0]}
                 shadowBias={-0.0001}
