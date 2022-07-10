@@ -1,8 +1,15 @@
+import { motion } from "framer-motion"
 
 function Projects() {
   return (
     <div className="full-page">
-      Hi
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 2 }}
+      >
+        Hi
+      </motion.div>
     </div>
   )
 }

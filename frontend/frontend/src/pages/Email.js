@@ -1,7 +1,8 @@
+import { motion } from "framer-motion"
 
 function Email() {
   return (
-    <div>Email</div>
+    <motion.div>Email</motion.div>
   )
 }
 

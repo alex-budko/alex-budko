@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <Nav className="justify-content-center" activeKey="" justify="true">
         <Nav.Item>
-        <Link to="">Home</Link>
+          <Link to="">Home</Link>
         </Nav.Item>
 
         <Nav.Item>

@@ -34,12 +34,12 @@ export default function DropSpawner() {
             console.log('here')
             setCubes(cubes => 
                 ([...cubes,
-                    <Cube position={[Math.floor(Math.random() * 10) - 5, Math.floor(Math.random() * 5) + 10, Math.floor(Math.random() * -10) - 3]} />
+                    <Cube key={i} position={[Math.floor(Math.random() * 10) - 5, Math.floor(Math.random() * 5) + 10, Math.floor(Math.random() * -10) - 3]} />
                 ])
             )
             setBalls(balls => 
                 ([...balls,
-                    <Ball position={[Math.floor(Math.random() * 10) - 5, Math.floor(Math.random() * 5) + 10, Math.floor(Math.random() * -10) - 3]} />
+                    <Ball key={i} position={[Math.floor(Math.random() * 10) - 5, Math.floor(Math.random() * 5) + 10, Math.floor(Math.random() * -10) - 3]} />
                 ])
             )
         }
