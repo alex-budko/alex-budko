@@ -1,4 +1,4 @@
-**Hey there!** 🥳
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=1FF71D&width=435&lines=Hey+there!;My+name+is+Alex!;Welcome+to+my+GitHub+profile)](https://git.io/typing-svg) 🥳
 
 - I'm Alex 🤵
 - I am an undergraduate student at UPenn 📘
