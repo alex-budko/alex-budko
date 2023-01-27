@@ -9,6 +9,8 @@ Check out some of my projects! 🚀
 
 
 **I've Played With**
+
+
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=1000&color=F71581&width=435&lines=Django;React.js;Next.js;Express.js;PostgreSQL;MongoDB;Docker;Kubernetes)](https://git.io/typing-svg)
 
-![image](https://user-images.githubusercontent.com/103473998/215004694-309528ba-3a4d-4044-abe3-6e0317cb1dd8.gif)
+![github-contribution-grid-snake](https://user-images.githubusercontent.com/103473998/215005781-4b2dbed8-5ddb-44bc-b7e1-947a088872bc.gif)
