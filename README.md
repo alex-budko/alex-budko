@@ -3,7 +3,7 @@
 - I am an undergraduate student at UPenn 📘
 - I am currently working on something cool 👽
 - I absolutely adore Django and React.ts 💕
-- I am a member of Penn Labs, WUFC, WUFT, and PSD🌐
+- I am a member of Penn Labs, WUFC, and WUFT🌐
 
 Check out some of my projects! 🚀
 
