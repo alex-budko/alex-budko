@@ -1,7 +1,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=1FF71D&width=435&lines=Hey+there!;My+name+is+Alex!;Welcome+to+my+GitHub+profile)](https://git.io/typing-svg) 
 
 - I am an undergraduate student at UPenn 📘
-- I am currently working on an AI project 👽
+- I am currently working on an AI based project 👽
 - I absolutely adore Django and React.ts 💕
 - I am a member of Penn Labs, WUFC, and WUFT🌐
 
